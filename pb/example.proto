@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package pb;
+
+service ExampleService {
+  rpc Example(ExampleRequest) returns (ExampleResponse) {}
+}
+
+message ExampleRequest {
+	int64 id = 1;
+}
+
+message ExampleResponse {
+	int64 id = 1;
+}
